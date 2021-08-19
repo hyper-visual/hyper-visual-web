@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           margin: 0;
           background: white;
           min-height: 100%;
-          font-family: sans-serif;
+          font-family: -apple-system, sans-serif;
         }
     `}
       />
