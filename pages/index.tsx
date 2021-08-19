@@ -11,9 +11,7 @@ import { Heading06 } from '../components/Heading/Heading06';
 import { Paragraph } from '../components/Paragraph/Paragraph';
 import { intro01, intro02, intro03 } from '../Text/intro';
 import { Heading03 } from '../components/Heading/Heading03';
-import {
-  defiProsOnPrice, defiProsOnTime, defiProsOnAccess01, defiProsOnAccess02,
-} from '../Text/defi-pros';
+import { defiProsList } from '../Text/defi-pros';
 import { Heading05 } from '../components/Heading/Heading05';
 
 const Container = styled.div`
@@ -82,41 +80,22 @@ export default function Index() {
               디파이의 장점
             </Heading03>
           </Section>
-          <Section>
-            <Heading05>
-              가격적 측면
-            </Heading05>
-          </Section>
-          <Section>
-            <Paragraph>
-              {defiProsOnPrice}
-            </Paragraph>
-          </Section>
-          <Section>
-            <Heading05>
-              시간적 측면
-            </Heading05>
-          </Section>
-          <Section>
-            <Paragraph>
-              {defiProsOnTime}
-            </Paragraph>
-          </Section>
-          <Section>
-            <Heading05>
-              접근성의 측면
-            </Heading05>
-          </Section>
-          <Section>
-            <Paragraph>
-              {defiProsOnAccess01}
-            </Paragraph>
-          </Section>
-          <Section>
-            <Paragraph>
-              {defiProsOnAccess02}
-            </Paragraph>
-          </Section>
+          {defiProsList.map((pro) => (
+            <>
+              <Section>
+                <Heading05>
+                  {pro.title}
+                </Heading05>
+              </Section>
+              {pro.text.map((text) => (
+                <Section>
+                  <Paragraph>
+                    {text}
+                  </Paragraph>
+                </Section>
+              ))}
+            </>
+          ))}
         </Article>
       </Container>
     </>

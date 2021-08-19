@@ -13,3 +13,18 @@ export const defiProsOnAccess01 = `
 export const defiProsOnAccess02 = `
     앞으로 디파이 서비스의 역사와 목표, 그리고 비판점에 대해서 데이터 시각화를 통해 쉽게 설명하고자 한다. 디파이에 대하여 궁금증을 가지고 있던 분들이 쉽고 빠르게 이해할 수 있는 토대가 되길 기대한다.
 `;
+
+export const defiProsList = [
+  {
+    title: '가격적 측면',
+    text: [defiProsOnPrice],
+  },
+  {
+    title: '시간적 측면',
+    text: [defiProsOnTime],
+  },
+  {
+    title: '접근성의 측면',
+    text: [defiProsOnAccess01, defiProsOnAccess02],
+  },
+];
