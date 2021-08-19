@@ -38,6 +38,7 @@ module.exports = {
     "react/require-default-props": "off",
     "react/react-in-jsx-scope": "off",
     "import/prefer-default-export": "off",
+    'max-len': ["warn", { "code": 100 }],
     "import/extensions": [
       "error",
       "ignorePackages",

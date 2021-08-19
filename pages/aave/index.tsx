@@ -4,7 +4,7 @@ import Image from 'next/image';
 import sample from '../../public/sample.png';
 import Header from '../../components/Header';
 import { headerHeight } from '../../components/styles';
-import { Heading01 } from '../../components/Heading01';
+import { Heading01 } from '../../components/Heading/Heading01';
 
 const Container = styled.div`
   display: flex;
