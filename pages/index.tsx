@@ -2,7 +2,9 @@ import styled from '@emotion/styled';
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
+import Iframe from 'react-iframe';
 import etherImage from '../public/ether-image.jpg';
+import compountImage from '../public/compound.png';
 import Header from '../components/Header';
 import { headerHeight } from '../components/styles';
 import { Heading01 } from '../components/Heading/Heading01';
@@ -13,6 +15,8 @@ import { intro01, intro02, intro03 } from '../Text/intro';
 import { Heading03 } from '../components/Heading/Heading03';
 import { defiProsList } from '../Text/defi-pros';
 import { Heading05 } from '../components/Heading/Heading05';
+import { defiTerms } from '../Text/defi-terms';
+import { historyTextList } from '../Text/history';
 
 const Container = styled.div`
   display: flex;
@@ -42,6 +46,10 @@ const Article = styled.article`
 const Section = styled.section`
   max-width: 660px;
   margin: 0 auto;
+`;
+
+const StyledIframe = styled(Iframe)`
+  margin-top: 1.2rem
 `;
 
 export default function Index() {
@@ -96,6 +104,139 @@ export default function Index() {
               ))}
             </>
           ))}
+          <Section>
+            <Heading03>
+              디파이 용어 정리
+            </Heading03>
+            {defiTerms.map((term) => (
+              <>
+                <Section>
+                  <Heading05>
+                    {term.name}
+                  </Heading05>
+                </Section>
+                <Paragraph>
+                  {term.text}
+                </Paragraph>
+              </>
+            ))}
+          </Section>
+          <Section>
+            <Heading03>
+              이더리움과 디파이의 역사
+            </Heading03>
+          </Section>
+          {historyTextList.map((text) => (
+            <Section>
+              <Paragraph>
+                {text}
+              </Paragraph>
+            </Section>
+          ))}
+          <Heading06>여기 디파이 역사 그림 넣기</Heading06>
+          <Section>
+            <Heading05>
+              이더리움 트랜잭션과 디파이 트랜잭션
+            </Heading05>
+            <Heading06>여기 트랜잭션 그래프 4개? 넣기</Heading06>
+          </Section>
+          <Section>
+            <Heading03>
+              아베(AAVE)와 컴파운드(Compound) 로 디파이 살펴 보기
+            </Heading03>
+          </Section>
+          <Section>
+            <Paragraph>
+              담보 대출을 제공하는 가장 큰 규모의 세 디파이 서비스(컴파운드(Compound), 에이브(AAVE), 메이커다오(MakerDAO))를 살펴 보자.
+            </Paragraph>
+          </Section>
+          <Section>
+            <Heading05>
+              <Image src={compountImage} height="30px" width="30px" />
+              <span>컴파운드</span>
+            </Heading05>
+          </Section>
+          <Section>
+            <StyledIframe
+              title="tvl"
+              url="/tvl_usd.html"
+              height="300px"
+              width="100%"
+              frameBorder={0}
+            />
+          </Section>
+          <Section>
+            <StyledIframe
+              title="tvl"
+              url="/tvl_eth.html"
+              height="300px"
+              width="100%"
+              frameBorder={0}
+            />
+          </Section>
+          <Section>
+            <StyledIframe
+              title="tvl"
+              url="/compound_tvl.html"
+              height="300px"
+              width="100%"
+              frameBorder={0}
+            />
+          </Section>
+          <Section>
+            <StyledIframe
+              title="tvl"
+              url="/compound_asset.html"
+              height="300px"
+              width="100%"
+              frameBorder={0}
+            />
+          </Section>
+          <Section>
+            <StyledIframe
+              title="tvl"
+              url="/aave_tvl.html"
+              height="300px"
+              width="100%"
+              frameBorder={0}
+            />
+          </Section>
+          <Section>
+            <StyledIframe
+              title="tvl"
+              url="/aave_asset.html"
+              height="300px"
+              width="100%"
+              frameBorder={0}
+            />
+          </Section>
+          <Section>
+            <StyledIframe
+              title="tvl"
+              url="/maker_tvl.html"
+              height="300px"
+              width="100%"
+              frameBorder={0}
+            />
+          </Section>
+          <Section>
+            <StyledIframe
+              title="tvl"
+              url="/total_user.html"
+              height="300px"
+              width="100%"
+              frameBorder={0}
+            />
+          </Section>
+          <Section>
+            <StyledIframe
+              title="tvl"
+              url="/total_users_proportion.html"
+              height="300px"
+              width="100%"
+              frameBorder={0}
+            />
+          </Section>
         </Article>
       </Container>
     </>
