@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import Logo from './Logo';
-import { headerHeight, headingDefault } from './styles';
+import { headerHeight, resetPaddingMargin } from './styles';
 
 const Container = styled.div`
   width: 100%;
@@ -11,11 +11,11 @@ const Container = styled.div`
   padding: 4px 24px;
   box-sizing: border-box;
   border-bottom: 1px solid #202020;
-  position: fixed;
+  position: sticky;
 `;
 
 const H4 = styled.h4`
-  ${headingDefault}
+  ${resetPaddingMargin}
   font-size: 21px;
   font-family: Arimo, -apple-system, sans-serif;
   color: rgb(21, 21, 21);
