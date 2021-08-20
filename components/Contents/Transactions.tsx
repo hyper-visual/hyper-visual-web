@@ -3,14 +3,14 @@ import Image from 'next/image';
 import React from 'react';
 import {
   ethereumTransaction, aaveTransaction, compoundTransaction, makerdaoTransaction,
-} from '../../public/graph';
+} from '@/public/graph';
 import { Paragraph } from '../Paragraph/Paragraph';
 import { Heading03 } from '../Heading/Heading03';
 import { Heading05 } from '../Heading/Heading05';
 import { Caption } from '../Caption';
 
 const Section = styled.section`
-  max-width: 660px;
+  max-width: 720px;
   margin: 0 auto;
 `;
 
@@ -37,7 +37,7 @@ export default function Transactions() {
       <Section>
         <Image src={aaveTransaction} layout="responsive" objectFit="cover" />
         <Caption>
-          그림 4. 아베 전체 트랜잭션 수.
+          그림 4. 에이브 전체 트랜잭션 수.
           Aave 코어 컨트랙트들과 aToken 컨트랙트들로 전송되는 트랜잭션 수를 합해서 얻은 값.
           데이터 출처: Google BigQuery에서 제공하는 트랜잭션 데이터
         </Caption>
@@ -52,7 +52,7 @@ export default function Transactions() {
       </Section>
       <Section>
         <Heading03>
-          아베(AAVE)와 컴파운드(Compound) 로 디파이 살펴 보기
+          에이브(AAVE)와 컴파운드(Compound), 메이커다오(MakerDao)로 보는 디파이
         </Heading03>
       </Section>
       <Section>

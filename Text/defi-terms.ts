@@ -9,9 +9,7 @@ export const liquidationText = `
 `;
 
 export const tokenText = `
-    코인과 비슷한 의미로 사용되지만, 단순 지불 수단 외에 더 넓은 기능을 가지고 있음. (erc 20 / 721 설명 추가)
-    *이 자리에 두 그래프 추가
-    + 지금까지 발행된 ERC-20의 개수 // Uniswap 상위 20개 
+    코인과 비슷한 의미로 사용되지만, 단순 지불 수단 외에 더 넓은 기능을 가지고 있고 eth, btc와 같은 네트워크 코인과 구분됨. 이더리움에는 대표적으로 유틸리티 코인 등의 용도로 사용되는 분절가능한 erc-20 토큰과 NFT로 불리는 분절 불가능한 erc-721 토큰이 있음
 `;
 
 export const defiTerms = [

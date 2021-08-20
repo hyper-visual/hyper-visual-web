@@ -9,7 +9,7 @@ import { aaveTvl, aaveTvlLog } from '@/public/graph';
 import { Caption } from '@/components/Caption';
 
 const Section = styled.section`
-  max-width: 660px;
+  max-width: 720px;
   margin: 0 auto;
 `;
 
@@ -29,7 +29,7 @@ export default function Aave() {
       <Section>
         <Heading05>
           <Image src={aave} height="30px" width="30px" />
-          <span>아베</span>
+          <span>에이브</span>
         </Heading05>
       </Section>
       {aaveTextList.map((text) => (

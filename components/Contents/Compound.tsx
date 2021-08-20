@@ -9,7 +9,7 @@ import { compoundTvl, compoundTvlLog } from '@/public/graph';
 import { Caption } from '@/components/Caption';
 
 const Section = styled.section`
-  max-width: 660px;
+  max-width: 720px;
   margin: 0 auto;
 `;
 

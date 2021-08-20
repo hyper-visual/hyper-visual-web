@@ -7,7 +7,7 @@ export const history02 = `
 `;
 
 export const history03 = `
-이더리움 네트워크에서 다양한 기능을 제공하는 디파이가 등장하기까지 어떠한 발전사가 있었는지 그림을 통해 알아보자.
+다음은 이더리움 네트워크 안의 대표적인 디파이 서비스들의 발전사를 그림으로 나타낸 것이다.
 `;
 
 export const historyTextList = [history01, history02, history03];

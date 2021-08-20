@@ -7,7 +7,7 @@ import { defiTotalUsers, defiTotalUsersProportion } from '@/public/graph';
 import { Caption } from '@/components/Caption';
 
 const Section = styled.section`
-  max-width: 660px;
+  max-width: 720px;
   margin: 0 auto;
 `;
 
@@ -29,18 +29,18 @@ export default function DefiUsers() {
   const graphs = [
     {
       url: defiTotalUsers,
-      caption: '그림 14. 컴파운드, 아베, 메이커다오 총 사용자(unique address) 수. 데이터 출처: Dune Analytics',
+      caption: '그림 14. 컴파운드, 에이브, 메이커다오 총 사용자(unique address) 수. 데이터 출처: Dune Analytics',
     },
     {
       url: defiTotalUsersProportion,
-      caption: '그림 15. 컴파운드, 아베, 메이커다오 총 사용자(unique address) 수 비율. 데이터 출처: Dune Analytic',
+      caption: '그림 15. 컴파운드, 에이브, 메이커다오 총 사용자(unique address) 수 비율. 데이터 출처: Dune Analytic',
     },
   ];
   return (
     <>
       <Section>
         <Heading05>
-          컴파운드, 아베, 메이커다오 사용자 수 (unique address)
+          컴파운드, 에이브, 메이커다오 사용자 수 (unique address)
         </Heading05>
       </Section>
       <Section>
