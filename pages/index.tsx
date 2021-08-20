@@ -5,6 +5,7 @@ import React from 'react';
 import Iframe from 'react-iframe';
 import etherImage from '../public/ether-image.jpg';
 import compountImage from '../public/compound.png';
+import historyImage from '../public/defi_history.png';
 import Header from '../components/Header';
 import { headerHeight } from '../components/styles';
 import { Heading01 } from '../components/Heading/Heading01';
@@ -17,6 +18,8 @@ import { defiProsList } from '../Text/defi-pros';
 import { Heading05 } from '../components/Heading/Heading05';
 import { defiTerms } from '../Text/defi-terms';
 import { historyTextList } from '../Text/history';
+import { Caption } from '../components/Caption';
+import Transactions from '../components/Contents/Transactions';
 
 const Container = styled.div`
   display: flex;
@@ -133,13 +136,11 @@ export default function Index() {
               </Paragraph>
             </Section>
           ))}
-          <Heading06>여기 디파이 역사 그림 넣기</Heading06>
-          <Section>
-            <Heading05>
-              이더리움 트랜잭션과 디파이 트랜잭션
-            </Heading05>
-            <Heading06>여기 트랜잭션 그래프 4개? 넣기</Heading06>
+          <Section style={{ maxWidth: '880px', margin: '60px auto' }}>
+            <Image src={historyImage} layout="responsive" objectFit="cover" />
+            <Caption>그림 1. 이더리움의 가장 큰 디파이 서비스 4개(컴파운드, 유니스왑, 아베, 메이커다오)의 발전사</Caption>
           </Section>
+          <Transactions />
           <Section>
             <Heading03>
               아베(AAVE)와 컴파운드(Compound) 로 디파이 살펴 보기
@@ -155,87 +156,6 @@ export default function Index() {
               <Image src={compountImage} height="30px" width="30px" />
               <span>컴파운드</span>
             </Heading05>
-          </Section>
-          <Section>
-            <StyledIframe
-              title="tvl"
-              url="/tvl_usd.html"
-              height="300px"
-              width="100%"
-              frameBorder={0}
-            />
-          </Section>
-          <Section>
-            <StyledIframe
-              title="tvl"
-              url="/tvl_eth.html"
-              height="300px"
-              width="100%"
-              frameBorder={0}
-            />
-          </Section>
-          <Section>
-            <StyledIframe
-              title="tvl"
-              url="/compound_tvl.html"
-              height="300px"
-              width="100%"
-              frameBorder={0}
-            />
-          </Section>
-          <Section>
-            <StyledIframe
-              title="tvl"
-              url="/compound_asset.html"
-              height="300px"
-              width="100%"
-              frameBorder={0}
-            />
-          </Section>
-          <Section>
-            <StyledIframe
-              title="tvl"
-              url="/aave_tvl.html"
-              height="300px"
-              width="100%"
-              frameBorder={0}
-            />
-          </Section>
-          <Section>
-            <StyledIframe
-              title="tvl"
-              url="/aave_asset.html"
-              height="300px"
-              width="100%"
-              frameBorder={0}
-            />
-          </Section>
-          <Section>
-            <StyledIframe
-              title="tvl"
-              url="/maker_tvl.html"
-              height="300px"
-              width="100%"
-              frameBorder={0}
-            />
-          </Section>
-          <Section>
-            <StyledIframe
-              title="tvl"
-              url="/total_user.html"
-              height="300px"
-              width="100%"
-              frameBorder={0}
-            />
-          </Section>
-          <Section>
-            <StyledIframe
-              title="tvl"
-              url="/total_users_proportion.html"
-              height="300px"
-              width="100%"
-              frameBorder={0}
-            />
           </Section>
         </Article>
       </Container>
