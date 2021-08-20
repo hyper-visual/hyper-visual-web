@@ -4,9 +4,9 @@ import React from 'react';
 import { Paragraph } from '@/components/Paragraph/Paragraph';
 import { Heading05 } from '@/components/Heading/Heading05';
 import { makerdao } from '@/public/icon';
-import { makerdaoTextList } from '@/text/makerdao';
 import { makerdaoTvl, makerdaoTvlLog } from '@/public/graph';
 import { Caption } from '@/components/Caption';
+import { makerdaoTextList } from '@/components/Text/makerdao';
 
 const Section = styled.section`
   max-width: 720px;
