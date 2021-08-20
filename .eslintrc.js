@@ -7,7 +7,6 @@ module.exports = {
     "import/resolver": {
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"],
-        "paths": ["src"]
       }
     }
   },
@@ -39,6 +38,7 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "import/prefer-default-export": "off",
     'max-len': ["warn", { "code": 100 }],
+    "import/no-unresolved": "warn",
     "import/extensions": [
       "error",
       "ignorePackages",

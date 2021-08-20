@@ -2,9 +2,7 @@ import styled from '@emotion/styled';
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
-import Iframe from 'react-iframe';
 import etherImage from '../public/ether-image.jpg';
-import compountImage from '../public/compound.png';
 import historyImage from '../public/defi_history.png';
 import Header from '../components/Header';
 import { headerHeight } from '../components/styles';
@@ -12,14 +10,15 @@ import { Heading01 } from '../components/Heading/Heading01';
 import { Heading04 } from '../components/Heading/Heading04';
 import { Heading06 } from '../components/Heading/Heading06';
 import { Paragraph } from '../components/Paragraph/Paragraph';
-import { intro01, intro02, intro03 } from '../Text/intro';
+import { intro01, intro02, intro03 } from '../text/intro';
 import { Heading03 } from '../components/Heading/Heading03';
-import { defiProsList } from '../Text/defi-pros';
+import { defiProsList } from '../text/defi-pros';
 import { Heading05 } from '../components/Heading/Heading05';
-import { defiTerms } from '../Text/defi-terms';
-import { historyTextList } from '../Text/history';
+import { defiTerms } from '../text/defi-terms';
+import { historyTextList } from '../text/history';
 import { Caption } from '../components/Caption';
 import Transactions from '../components/Contents/Transactions';
+import Compound from '../components/Contents/Compound';
 
 const Container = styled.div`
   display: flex;
@@ -49,10 +48,6 @@ const Article = styled.article`
 const Section = styled.section`
   max-width: 660px;
   margin: 0 auto;
-`;
-
-const StyledIframe = styled(Iframe)`
-  margin-top: 1.2rem
 `;
 
 export default function Index() {
@@ -141,22 +136,7 @@ export default function Index() {
             <Caption>그림 1. 이더리움의 가장 큰 디파이 서비스 4개(컴파운드, 유니스왑, 아베, 메이커다오)의 발전사</Caption>
           </Section>
           <Transactions />
-          <Section>
-            <Heading03>
-              아베(AAVE)와 컴파운드(Compound) 로 디파이 살펴 보기
-            </Heading03>
-          </Section>
-          <Section>
-            <Paragraph>
-              담보 대출을 제공하는 가장 큰 규모의 세 디파이 서비스(컴파운드(Compound), 에이브(AAVE), 메이커다오(MakerDAO))를 살펴 보자.
-            </Paragraph>
-          </Section>
-          <Section>
-            <Heading05>
-              <Image src={compountImage} height="30px" width="30px" />
-              <span>컴파운드</span>
-            </Heading05>
-          </Section>
+          <Compound />
         </Article>
       </Container>
     </>
