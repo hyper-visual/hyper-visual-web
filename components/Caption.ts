@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Caption = styled.div`
-  margin: 16px 0 24px 0;
+  margin: 16px 0 40px 0;
   display: flex;
   justify-content: center;
   text-align: center;

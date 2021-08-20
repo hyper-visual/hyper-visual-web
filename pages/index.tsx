@@ -2,6 +2,8 @@ import styled from '@emotion/styled';
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
+import Aave from '@/components/Contents/Aave';
+import DefiUsers from '@/components/Contents/DefiUsers';
 import etherImage from '../public/ether-image.jpg';
 import historyImage from '../public/defi_history.png';
 import Header from '../components/Header';
@@ -19,6 +21,8 @@ import { historyTextList } from '../text/history';
 import { Caption } from '../components/Caption';
 import Transactions from '../components/Contents/Transactions';
 import Compound from '../components/Contents/Compound';
+import Makerdao from '../components/Contents/Makerdao';
+import AssetsInDefi from '../components/Contents/AssetsInDefi';
 
 const Container = styled.div`
   display: flex;
@@ -137,6 +141,10 @@ export default function Index() {
           </Section>
           <Transactions />
           <Compound />
+          <Aave />
+          <Makerdao />
+          <AssetsInDefi />
+          <DefiUsers />
         </Article>
       </Container>
     </>

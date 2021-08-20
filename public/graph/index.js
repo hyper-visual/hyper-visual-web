@@ -12,6 +12,8 @@ import aaveTvl from './aave_tvl.png';
 import compoundAssetLog from './compound_deposit_token_log.png';
 import compoundAsset from './compound_deposit_token.png';
 import compoundTvlLog from './compound_tvl_log.png';
+import defiTotalUsers from './total_users.png';
+import defiTotalUsersProportion from './total_users_proportion.png';
 
 export {
   aaveTransaction,
@@ -28,4 +30,6 @@ export {
   compoundAssetLog,
   compoundAsset,
   compoundTvlLog,
+  defiTotalUsersProportion,
+  defiTotalUsers,
 };
