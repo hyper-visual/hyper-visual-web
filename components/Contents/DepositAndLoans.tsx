@@ -1,6 +1,4 @@
 import styled from '@emotion/styled';
-import Image from 'next/image';
-import React from 'react';
 import { Paragraph } from '@/components/Paragraph/Paragraph';
 import { Heading05 } from '@/components/Heading/Heading05';
 import { Caption } from '@/components/Caption';
@@ -42,8 +40,8 @@ export default function DepoistAndLoans() {
           다음은 세 디파이의 예치금, 대출액을 USD 기준으로 나타낸 것이다. 두 수치의 차이를 보면 대출 프로토콜이 어떻게 작동하고 있는지 알 수 있다.
         </Paragraph>
       </Section>
-      {graphs.map((graph, index) => (
-        <Section key={index}>
+      {graphs.map((graph) => (
+        <Section>
           <StyledIframe
             url={graph.url}
             height="300px"
